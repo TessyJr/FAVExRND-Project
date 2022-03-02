@@ -12,7 +12,7 @@ body {
   background-position: center;
 }
 
-/* Navbar */
+/* NavBar */
 body nav {
   position: fixed;
   background-color: #222831;
@@ -37,8 +37,8 @@ nav i {
   margin-right: 4px;
 }
 
-/* Login Form */
-.login {
+/* Registration Form */
+.registration {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -46,11 +46,11 @@ nav i {
   flex-direction: column;
 }
 
-.login ::placeholder {
-  color: #f05454;
+.registration ::placeholder {
+  color: rgba(240, 84, 84, 0.8);
 }
 
-.login form {
+.registration form {
   background-color: #dddddd;
   display: flex;
   flex-direction: column;
@@ -60,26 +60,26 @@ nav i {
   color: #f05454;
 }
 
-.login form h1 {
+.registration form h1 {
   text-align: center;
   margin-bottom: 16px;
   font-weight: 700;
   font-size: 40px;
 }
 
-.login form p {
+.registration form p {
   text-align: center;
   margin-top: 24px;
   font-size: 20px;
 }
 
-.login form p a {
+.registration form p a {
   color: #f05454;
   font-weight: 700;
   text-decoration: none;
 }
 
-.login form input {
+.registration form input {
   height: 50px;
   font-size: 24px;
   padding: 0 24px;
@@ -90,55 +90,77 @@ nav i {
   background-color: transparent;
 }
 
-.login form input:focus {
+.registration form input:focus {
   border: 3px solid #f05454;
   outline: none;
 }
 
-.login form .inputPass {
+.registration form .inputPass {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.login form .inputPass input {
+.registration form .inputPass input {
   width: 89%;
 }
 
-.login form .inputPass button#seePass {
+.registration form .inputPass button#seePass {
   width: 10%;
   margin: 0;
   color: #f05454;
   background-color: transparent;
 }
 
-.login form .inputPass button#seePass:hover {
+.registration form .inputPass button#seePass:hover {
   color: #dddddd;
   background-color: #f05454;
 }
 
-.login form .inputPass button#seePass:focus {
+.registration form .inputPass button#seePass:focus {
   outline: none;
 }
 
-.login form .rememberMe {
+.registration form .inputPass button#seeConfPass {
+  width: 10%;
+  margin: 0;
+  color: #f05454;
+  background-color: transparent;
+}
+
+.registration form .inputPass button#seeConfPass:hover {
+  color: #dddddd;
+  background-color: #f05454;
+}
+
+.registration form .inputPass button#seeConfPass:focus {
+  outline: none;
+}
+
+.registration form .terms label a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #f05454;
+}
+
+.registration form .terms {
   display: flex;
   align-items: center;
 }
 
-.login form .rememberMe input {
+.registration form .terms input {
   height: 20px;
   width: 20px;
   background-color: #dddddd;
 }
 
-.login form .rememberMe label {
+.registration form .terms label {
   font-size: 20px;
   margin-left: 8px;
 }
 
-.login form button {
+.registration form button {
   color: white;
   background-color: #f05454;
   border: 2px solid #f05454;
@@ -150,7 +172,7 @@ nav i {
   transition: 0.3s;
 }
 
-.login form button:hover {
+.registration form button:hover {
   color: #f05454;
   background-color: #dddddd;
   border: 2px solid #f05454;
