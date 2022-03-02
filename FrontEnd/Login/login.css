@@ -47,7 +47,7 @@ nav i {
 }
 
 .login ::placeholder {
-  color: #f05454;
+  color: rgba(240, 84, 84, 0.8);
 }
 
 .login form {
