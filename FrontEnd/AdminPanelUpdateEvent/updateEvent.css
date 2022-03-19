@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  text-decoration: none;
+}
+
+/* navbar */
+nav {
+  background: #222831;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+}
+
+nav > ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav > ul > li {
+  display: inline-block;
+  line-height: 75px;
+  margin: 0 5px;
+}
+
+nav > ul > li > a {
+  color: #f05454;
+  font-size: 17px;
+}
+
+label.logo {
+  color: #f05454;
+  font-size: 33px;
+  line-height: 75px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+.navul-mid {
+  margin-right: 30%;
+}
+
+.logout > a {
+  color: #dddddd;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 8px 25px 8px 25px;
+  border: 2px solid #f05454;
+  background-color: #f05454;
+  border-radius: 7px;
+}
+
+.browse-event {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.browse-event > a {
+  color: #dddddd;
+  text-decoration: none;
+  padding: 12px 24px 12px 24px;
+  border: 2px solid #f05454;
+  background-color: #f05454;
+  border-radius: 7px;
+}
+
+.home > a {
+  font-size: 25px;
+}
+
+.event-gallery > a {
+  font-size: 23px;
+  margin-left: 40px;
+}
+
+.dashboard > a {
+  font-weight: bold;
+  font-size: 23px;
+  margin-left: 40px;
+}
+
+/* Update Event */
+#updateEvent {
+  min-height: 100vh;
+}
+#updateEvent .container {
+  display: flex;
+  height: 100%;
+}
+#updateEvent .container .dashboardNav {
+  background-color: #30475e;
+  min-height: 100vh;
+  padding: 120px 40px;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #f05454;
+}
+#updateEvent .container .dashboardNav h1 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+#updateEvent .container .dashboardNav a {
+  color: #f05454;
+  font-weight: 500;
+}
+#updateEvent .container .dashboardNav a.active {
+  font-weight: bold;
+}
+#updateEvent .container .dashboardBody {
+  width: 80vw;
+  padding: 120px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+#updateEvent .container .dashboardBody .heading {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#updateEvent .container .dashboardBody .heading h1 {
+  font-size: 36px;
+}
+#updateEvent .container .dashboardBody .heading p {
+  color: #f05454;
+  font-size: 20px;
+}
+
+#updateEvent .container .dashboardBody form {
+  display: flex;
+  gap: 50px;
+}
+::placeholder {
+  color: #f05454;
+}
+#updateEvent .container .dashboardBody form input,
+#updateEvent .container .dashboardBody form select {
+  height: 40px;
+  font-size: 20px;
+  border: 2px solid #30475e;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #f05454;
+}
+#updateEvent .container .dashboardBody form textarea {
+  height: 100px;
+  font-size: 20px;
+  border: 2px solid #30475e;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #f05454;
+}
+#updateEvent .container .dashboardBody form .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#updateEvent .container .dashboardBody form .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 120%;
+}
+#updateEvent .container .dashboardBody form .eventName,
+#updateEvent .container .dashboardBody form .date,
+#updateEvent .container .dashboardBody form .location,
+#updateEvent .container .dashboardBody form .description,
+#updateEvent .container .dashboardBody form .image {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#updateEvent .container .dashboardBody form .categoryPrice {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+#updateEvent .container .dashboardBody form .categoryPrice .category {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 5px;
+}
+#updateEvent .container .dashboardBody form .categoryPrice .price {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 5px;
+}
+#updateEvent .container .dashboardBody form .description textarea {
+  min-width: 100%;
+  max-width: 100%;
+}
+#updateEvent .container .dashboardBody form .button {
+  display: flex;
+  gap: 20px;
+}
+#updateEvent .container .dashboardBody form .button a button {
+  height: 50px;
+  width: 270px;
+}
+#updateEvent .container .dashboardBody form .button a .update {
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px;
+  color: white;
+  background-color: #f05454;
+  border: 1px solid #f05454;
+  transition: 0.3s;
+}
+#updateEvent .container .dashboardBody form .button a .update:hover {
+  background-color: transparent;
+  color: #f05454;
+  transition: 0.3s;
+}
+#updateEvent .container .dashboardBody form .button a .delete:hover {
+  background-color: transparent;
+  color: crimson;
+}
+#updateEvent .container .dashboardBody form .button a .delete {
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px;
+  color: white;
+  background-color: crimson;
+  border: 1px solid crimson;
+  transition: 0.3s;
+}
+#updateEvent .container .dashboardBody form .button a .cancel:hover {
+  background-color: #f05454;
+  color: white;
+}
+#updateEvent .container .dashboardBody form .button a .cancel {
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px;
+  color: #f05454;
+  background-color: transparent;
+  border: 1px solid #f05454;
+  transition: 0.3s;
+  width: fit-content;
+  padding: 0 20px;
+}

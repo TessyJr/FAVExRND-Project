@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  text-decoration: none;
+}
+
+/* navbar */
+nav {
+  background: #222831;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+}
+
+nav > ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav > ul > li {
+  display: inline-block;
+  line-height: 75px;
+  margin: 0 5px;
+}
+
+nav > ul > li > a {
+  color: #f05454;
+  font-size: 17px;
+}
+
+label.logo {
+  color: #f05454;
+  font-size: 33px;
+  line-height: 75px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+.navul-mid {
+  margin-right: 30%;
+}
+
+.logout > a {
+  color: #dddddd;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 8px 25px 8px 25px;
+  border: 2px solid #f05454;
+  background-color: #f05454;
+  border-radius: 7px;
+}
+
+.browse-event {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.browse-event > a {
+  color: #dddddd;
+  text-decoration: none;
+  padding: 12px 24px 12px 24px;
+  border: 2px solid #f05454;
+  background-color: #f05454;
+  border-radius: 7px;
+}
+
+.home > a {
+  font-size: 25px;
+}
+
+.event-gallery > a {
+  font-size: 23px;
+  margin-left: 40px;
+}
+
+.dashboard > a {
+  font-weight: bold;
+  font-size: 23px;
+  margin-left: 40px;
+}
+
+/* Add Event */
+#updateEvent {
+  min-height: 100vh;
+}
+#updateEvent .container {
+  display: flex;
+  height: 100%;
+}
+#updateEvent .container .dashboardNav {
+  background-color: #30475e;
+  min-height: 100vh;
+  padding: 120px 40px;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #f05454;
+}
+#updateEvent .container .dashboardNav h1 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+#updateEvent .container .dashboardNav a {
+  color: #f05454;
+  font-weight: 500;
+}
+#updateEvent .container .dashboardNav a.active {
+  font-weight: bold;
+}
+#updateEvent .container .dashboardBody {
+  width: 80vw;
+  padding: 120px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+#updateEvent .container .dashboardBody .heading {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#updateEvent .container .dashboardBody .heading h1 {
+  font-size: 36px;
+}
+#updateEvent .container .dashboardBody .heading p {
+  color: #f05454;
+  font-size: 20px;
+}
+#updateEvent .container .dashboardBody .cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+#updateEvent .container .dashboardBody .cardContainer .card {
+  width: 40%;
+}
+#updateEvent .container .dashboardBody .cardContainer .card .cardImg {
+  background-image: url(asset/eventImg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  padding: 40px;
+  border-radius: 10px 10px 0 0;
+}
+#updateEvent .container .dashboardBody .cardContainer .card .cardImg .date {
+  background-color: #30475e;
+  color: #f05454;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+#updateEvent .container .dashboardBody .cardContainer .card .cardBody {
+  background-color: #30475e;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 0 0 10px 10px;
+}
+#updateEvent .container .dashboardBody .cardContainer .card .cardBody h1 {
+  color: #f05454;
+}
+#updateEvent .container .dashboardBody .cardContainer .card .cardBody h1 span {
+  background-color: #dddddd;
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+#updateEvent .container .dashboardBody .cardContainer .card .cardBody h2 {
+  color: #dddddd;
+}
+#updateEvent .container .dashboardBody .cardContainer .card .cardBody h2 i {
+  margin-right: 15px;
+}
+#updateEvent .container .dashboardBody .cardContainer .card .cardBody button {
+  font-size: 24px;
+  border-radius: 10px;
+  background-color: #f05454;
+  border: 1px solid #f05454;
+  padding: 10px 0;
+  color: #dddddd;
+  width: 100%;
+  transition: 0.3s;
+}
+#updateEvent
+  .container
+  .dashboardBody
+  .cardContainer
+  .card
+  .cardBody
+  button:hover {
+  background-color: #dddddd;
+  color: #f05454;
+}

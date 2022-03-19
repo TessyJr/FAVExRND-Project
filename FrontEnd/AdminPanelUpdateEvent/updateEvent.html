@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7c925acf6e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="updateEvent.css">
+    <title>MyEvent AdminPanel</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul class="navul-right">
+            <li class="logout"><a href="#">Logout</a></li>
+        </ul>
+        <label class="logo">MyEvent</label>
+        <ul class="navul-mid">
+            <li class="home"><a href="#">Home</a></li>
+            <li class="event-gallery"><a href="#">Event Gallery</a></li>
+            <li class="dashboard"><a href="#">Dashboard</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Body -->
+    <section id="updateEvent">
+        <div class="container">
+            <div class="dashboardNav">
+                <h1>My Dashboard</h1>
+                <hr>
+                <h2><a href="../AdminPanelDashboard/dashboardAddEvent.html"><i class="fa-solid fa-plus"></i> Add
+                        Events</a></h2>
+                <hr>
+                <h2><a href="../AdminPanelUpdateEvent/dashboardUpdateEvent.html" class="active"><i
+                            class="fa-solid fa-pen-to-square"></i> Update My Events</a></h2>
+                <hr>
+            </div>
+            <div class="dashboardBody">
+                <div class="heading">
+                    <h1>Update Event</h1>
+                </div>
+                <form action="">
+                    <div class="left">
+                        <div class="eventName">
+                            <label for="eventName">Event Name</label>
+                            <input type="text" id="eventName" placeholder="Minimal 8 characters">
+                        </div>
+                        <div class="categoryPrice">
+                            <div class="category">
+                                <label for="category">Event Name</label>
+                                <select id="category" aria-placeholder="Category">
+                                    <option value="" disabled selected>Category</option>
+                                    <option value="category1">category1</option>
+                                    <option value="category2">category2</option>
+                                    <option value="category3">category3</option>
+                                    <option value="category4">category4</option>
+                                </select>
+                            </div>
+                            <div class="price">
+                                <label for="price">Price</label>
+                                <input type="text" id="price" placeholder="Price">
+                            </div>
+
+                        </div>
+                        <div class="location">
+                            <label for="location">Event Location</label>
+                            <input type="text" id="location" placeholder="Location">
+                        </div>
+                        <div class="date">
+                            <label for="date">Event Date</label>
+                            <input type="date" id="date">
+                        </div>
+                        <div class="description">
+                            <label for="description">Event Description</label>
+                            <textarea name="" id="description" cols="30" rows="10"
+                                placeholder="Minimal 20 characters"></textarea>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="image">
+                            <label for="image">Event Image</label>
+                            <input type="file" id="image" accept="image/*">
+                        </div>
+                        <div class="button">
+                            <a href="dashboardUpdateEvent.html"><button type="submit" class="update">Update
+                                    Event</button></a>
+                            <a href="dashboardUpdateEvent.html"><button type="button" class="delete">Delete Event
+                                </button></a>
+                            <a href="dashboardUpdateEvent.html"><button type="button" class="cancel">Cancel</button></a>
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

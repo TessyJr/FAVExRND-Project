@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+nav{
+    background: #222831;
+    height: 70px;
+    width: 100%;
+}
+
+nav>ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav>ul>li{
+    display: inline-block;
+    line-height: 75px;
+    margin: 0 5px;
+}
+
+nav>ul>li>a{
+    color: #f05454;
+    font-size: 17px;
+
+}
+    
+
+label.logo{
+    color: #f05454;
+    font-size: 33px;
+    line-height: 75px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+.landing-page{
+    background: url("/LandingPageRegister/assets/realbg.png");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.banner{
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    
+    
+}
+
+.banner-h1{
+    font-size: 75px;
+    color: #f05454;
+    
+}
+
+.paragraph{
+    color: #f05454;
+    font-size: 30px;
+}
+
+.browse-event{
+    margin-top: 30px;
+    font-size: 18px;
+    
+}
+
+.browse-event>a{
+    color: #dddddd;
+    text-decoration: none;
+    padding: 12px 24px 12px 24px; 
+    border: 2px solid #f05454;
+    background-color: #f05454;
+    border-radius: 7px;
+}
+
+
+
+.home>a{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.event-gallery>a{
+    font-size: 23px;
+    margin-left: 37px;
+}
+
+.navul-mid{
+    margin-right: 30%;
+}
+
+
+.login>a{
+    color: #dddddd;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 8px 25px 8px 25px; 
+    border: 2px solid #f05454;
+    background-color: #f05454;
+    border-radius: 7px;
+}
+
+.register>a{
+    color: #f05454;
+    text-decoration: none;
+    font-size: 15px; 
+    padding: 8px 25px 8px 25px; 
+    border: 2px solid #f05454;
+    background-color: #222831;
+    border-radius: 7px;
+}
+

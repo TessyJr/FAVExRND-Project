@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  text-decoration: none;
+}
+
+/* navbar */
+nav {
+  background: #222831;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+}
+
+nav > ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav > ul > li {
+  display: inline-block;
+  line-height: 75px;
+  margin: 0 5px;
+}
+
+nav > ul > li > a {
+  color: #f05454;
+  font-size: 17px;
+}
+
+label.logo {
+  color: #f05454;
+  font-size: 33px;
+  line-height: 75px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+.navul-mid {
+  margin-right: 30%;
+}
+
+.logout > a {
+  color: #dddddd;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 8px 25px 8px 25px;
+  border: 2px solid #f05454;
+  background-color: #f05454;
+  border-radius: 7px;
+}
+
+.browse-event {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.browse-event > a {
+  color: #dddddd;
+  text-decoration: none;
+  padding: 12px 24px 12px 24px;
+  border: 2px solid #f05454;
+  background-color: #f05454;
+  border-radius: 7px;
+}
+
+.home > a {
+  font-size: 25px;
+}
+
+.event-gallery > a {
+  font-size: 23px;
+  margin-left: 40px;
+}
+
+.dashboard > a {
+  font-weight: bold;
+  font-size: 23px;
+  margin-left: 40px;
+}
+
+/* Add Event */
+#addEvent {
+  min-height: 100vh;
+}
+#addEvent .container {
+  display: flex;
+  height: 100%;
+}
+#addEvent .container .dashboardNav {
+  background-color: #30475e;
+  min-height: 100vh;
+  padding: 120px 40px;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #f05454;
+}
+#addEvent .container .dashboardNav h1 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+#addEvent .container .dashboardNav a {
+  color: #f05454;
+  font-weight: 500;
+}
+#addEvent .container .dashboardNav a.active {
+  font-weight: bold;
+}
+#addEvent .container .dashboardBody {
+  width: 80vw;
+  padding: 120px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+#addEvent .container .dashboardBody .heading {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#addEvent .container .dashboardBody .heading h1 {
+  font-size: 36px;
+}
+#addEvent .container .dashboardBody .heading p {
+  color: #f05454;
+  font-size: 20px;
+}
+
+#addEvent .container .dashboardBody form {
+  display: flex;
+  gap: 50px;
+}
+::placeholder {
+  color: #f05454;
+}
+#addEvent .container .dashboardBody form input,
+#addEvent .container .dashboardBody form select {
+  height: 40px;
+  font-size: 20px;
+  border: 2px solid #30475e;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #f05454;
+}
+#addEvent .container .dashboardBody form textarea {
+  height: 100px;
+  font-size: 20px;
+  border: 2px solid #30475e;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #f05454;
+}
+#addEvent .container .dashboardBody form .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#addEvent .container .dashboardBody form .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 120%;
+}
+#addEvent .container .dashboardBody form .eventName,
+#addEvent .container .dashboardBody form .date,
+#addEvent .container .dashboardBody form .location,
+#addEvent .container .dashboardBody form .description,
+#addEvent .container .dashboardBody form .image {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#addEvent .container .dashboardBody form .categoryPrice {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+#addEvent .container .dashboardBody form .categoryPrice .category {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 5px;
+}
+#addEvent .container .dashboardBody form .categoryPrice .price {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 5px;
+}
+#addEvent .container .dashboardBody form .description textarea {
+  min-width: 100%;
+  max-width: 100%;
+}
+#addEvent .container .dashboardBody form .button {
+  display: flex;
+  gap: 20px;
+}
+#addEvent .container .dashboardBody form .button button {
+  width: 50%;
+  height: 50px;
+}
+#addEvent .container .dashboardBody form .button button:nth-child(1) {
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px;
+  color: white;
+  background-color: #f05454;
+  border: 1px solid #f05454;
+  transition: 0.3s;
+}
+#addEvent .container .dashboardBody form .button button:nth-child(1):hover {
+  background-color: transparent;
+  color: #f05454;
+  transition: 0.3s;
+}
+#addEvent .container .dashboardBody form .button button:nth-child(2):hover {
+  background-color: #f05454;
+  color: white;
+}
+#addEvent .container .dashboardBody form .button button:nth-child(2) {
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px;
+  color: #f05454;
+  background-color: transparent;
+  border: 1px solid #f05454;
+  transition: 0.3s;
+}
